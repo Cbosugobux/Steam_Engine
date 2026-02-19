@@ -1,0 +1,412 @@
+Props: inserted 0 rows. Events scanned: 10. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 10. Events w/ Pinnacle props: 0.
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 165
+    desc = (
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 165
+    desc = (
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 165
+    desc = (
+IndentationError: unexpected indent
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+  File "/root/steam_engine/main.py", line 218
+    f"**{t.away_team} @ {t.home_team}**
+    ^
+SyntaxError: unterminated f-string literal (detected at line 218)
+  File "/root/steam_engine/main.py", line 220
+    f"**{t.away_team} @ {t.home_team}**
+    ^
+SyntaxError: unterminated f-string literal (detected at line 220)
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+  File "/root/steam_engine/main.py", line 163
+    Start: {_to_et_str(t.commence_time_utc)}"}\n"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+  File "/root/steam_engine/main.py", line 262
+    print(f"
+          ^
+SyntaxError: unterminated f-string literal (detected at line 262)
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+  File "/root/steam_engine/main.py", line 88
+    print(df.head(20).to_string(index=False))
+IndentationError: unexpected indent
+  File "/root/steam_engine/main.py", line 88
+    print(df.head(20).to_string(index=False))
+IndentationError: unexpected indent
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Traceback (most recent call last):
+  File "/root/steam_engine/main.py", line 15, in <module>
+    from detect import detect_triggers, trigger_key_hash
+  File "/root/steam_engine/detect.py", line 83
+    df = df[df["commence_time_utc"] > pd.Timestamp.utcnow()].copy()
+IndentationError: unexpected indent
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Traceback (most recent call last):
+  File "/root/steam_engine/main.py", line 460, in <module>
+    main()
+  File "/root/steam_engine/main.py", line 456, in main
+    cmd_prop_pull(args, cfg)
+  File "/root/steam_engine/main.py", line 359, in cmd_prop_pull
+    base_payload = client.odds(
+                   ^^^^^^^^^^^^
+  File "/root/steam_engine/odds_api.py", line 19, in odds
+    r.raise_for_status()
+  File "/root/steam_engine/.venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/basketball_nba/odds?apiKey=PASTE_YOUR_ODDS_API_KEY_HERE&regions=us%2Cus2%2Ceu&markets=spreads&oddsFormat=american&bookmakers=pinnacle
+Traceback (most recent call last):
+  File "/root/steam_engine/main.py", line 464, in <module>
+    main()
+  File "/root/steam_engine/main.py", line 460, in main
+    cmd_prop_pull(args, cfg)
+  File "/root/steam_engine/main.py", line 363, in cmd_prop_pull
+    base_payload = client.odds(
+                   ^^^^^^^^^^^^
+  File "/root/steam_engine/odds_api.py", line 19, in odds
+    r.raise_for_status()
+  File "/root/steam_engine/.venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.the-odds-api.com/v4/sports/basketball_nba/odds?apiKey=PASTE_YOUR_ODDS_API_KEY_HERE&regions=us%2Cus2%2Ceu&markets=spreads&oddsFormat=american&bookmakers=pinnacle
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.
+Props: inserted 0 rows. Events scanned: 13. Events w/ Pinnacle props: 0.

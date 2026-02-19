@@ -1,0 +1,34 @@
+{
+  "books": {
+    "pinnacle": "pinnacle",
+    "betonline": "betonlineag",
+    "draftkings": "draftkings",
+    "fanduel": "fanduel",
+    "betmgm": "betmgm",
+    "hardrock": "hardrockbet"
+  },
+  "move_thresholds": {
+    "spreads": 0.5,
+    "totals": 1.5
+  },
+  "plateau_minutes": 10,
+  "snapback_points": {
+    "spreads": 0.5,
+    "totals": 1.0
+  },
+  "lookback_hours": 24,
+  "min_confirmations": 0,
+  "alert_cooldown_minutes": 90,
+  "mode": "PAPER",
+  "close_window_minutes": 15,
+  "sharp_books": [
+    "pinnacle",
+    "betonlineag"
+  ],
+  "bet_books": [
+    "draftkings",
+    "fanduel",
+    "betmgm",
+    "hardrockbet"
+  ]
+}

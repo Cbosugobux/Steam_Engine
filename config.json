@@ -1,0 +1,47 @@
+{
+  "books": {
+    "pinnacle": "pinnacle",
+    "betonline": "betonlineag",
+    "draftkings": "draftkings",
+    "fanduel": "fanduel",
+    "betmgm": "betmgm",
+    "hardrock": "hardrockbet"
+  },
+  "move_thresholds": {
+    "spreads": 1.0,
+    "totals": 1.0
+  },
+  "plateau_minutes": 3,
+  "snapback_points": {
+    "spreads": 1.5,
+    "totals": 2.5
+  },
+  "lookback_hours": 24,
+  "min_confirmations": 0,
+  "alert_cooldown_minutes": 60,
+  "mode": "PAPER",
+  "close_window_minutes": 15,
+  "sharp_books": [
+    "pinnacle",
+    "betonlineag"
+  ],
+  "bet_books": [
+    "draftkings",
+    "fanduel",
+    "betmgm",
+    "hardrockbet"
+  ],
+  "score_min": 4.5,
+  "max_alerts_per_run": 5,
+  "alert_window_start_hour_et": 10,
+  "alert_window_start_min_et": 0,
+  "alert_window_end_hour_et": 22,
+  "alert_window_end_min_et": 0,
+  "min_minutes_to_game": 10,
+  "max_minutes_to_game": 900,
+  "score_w_move": 3.0,
+  "score_w_conf": 1.5,
+  "score_w_best": 0.75,
+  "score_conf_credit_if_none": 0,
+  "daily_dir": "data/daily"
+}

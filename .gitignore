@@ -1,0 +1,20 @@
+# env / secrets
+.env
+*.env
+
+# venv / cache
+.venv/
+__pycache__/
+*.pyc
+
+# data / db / logs
+data/
+logs/
+*.db
+*.sqlite
+*.parquet
+*.csv
+
+# backups / archives
+*.tar.gz
+*.zip

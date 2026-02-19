@@ -1,0 +1,7 @@
+  File "/root/steam_engine/main.py", line 165
+    desc = f"**{t.away_team} @ {t.home_team}**
+           ^
+SyntaxError: unterminated f-string literal (detected at line 165)
+  File "/root/steam_engine/main.py", line 164
+    f"Score: {float(getattr(t, 'score', 0)):.2f}"
+IndentationError: unexpected indent
