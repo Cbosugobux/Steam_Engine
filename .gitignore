@@ -27,3 +27,18 @@ config.json
 *.bak
 *.tmp
 *.pre_fix.*
+
+# Ops notes / scratch
+*_WORKING.txt
+CRON_WORKING.txt
+PROD_FROZEN_AT.txt
+_cron_working.txt
+REQUIREMENTS_WORKING.txt
+
+# Backup / prod snapshots
+*.bak.*
+*.PROD
+*.working
+
+# Archives
+*.tar.gz
