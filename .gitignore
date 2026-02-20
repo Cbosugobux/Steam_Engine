@@ -42,3 +42,20 @@ REQUIREMENTS_WORKING.txt
 
 # Archives
 *.tar.gz
+
+# Secrets / local config
+.env
+.env.*
+config.json
+
+# Virtual environments
+.venv/
+venv/
+
+# Runtime outputs
+logs/
+data/
+__pycache__/
+
+# Local snapshots
+*.pre_fix.*
