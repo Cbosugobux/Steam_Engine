@@ -1,20 +1,29 @@
-# env / secrets
-.env
-*.env
-
-# venv / cache
-.venv/
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyd
 
-# data / db / logs
-data/
+# Virtual envs
+.venv/
+venv/
+
+# Logs / runtime artifacts
 logs/
-*.db
-*.sqlite
-*.parquet
-*.csv
+*.log
 
-# backups / archives
-*.tar.gz
-*.zip
+# Local data / db
+data/
+*.sqlite
+*.db
+
+# Secrets / local config
+config.json
+.env
+.env.*
+
+# Editor/backup junk
+*.swp
+*.swo
+*.bak
+*.tmp
+*.pre_fix.*

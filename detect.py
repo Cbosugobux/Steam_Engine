@@ -4,6 +4,31 @@ from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from typing import Dict, List
 
+
+
+def _totals_outcome_from_move(origin_line, current_line, origin_move):
+    try:
+        if origin_move is None:
+            if origin_line is None or current_line is None:
+                return None
+            origin_move = float(current_line) - float(origin_line)
+        # --- TOTALS DIRECTION FIX ---
+        if market == "totals":
+            if origin_move > 0:
+                outcome = "Over"
+            elif origin_move < 0:
+                outcome = "Under"
+
+        m = float(origin_move)
+    except Exception:
+        return None
+
+    if m < 0:
+        return "Under"
+    if m > 0:
+        return "Over"
+    return None
+
 import pandas as pd
 
 
@@ -69,6 +94,7 @@ def detect_triggers(con: sqlite3.Connection, sport: str, market: str, config: Di
     # Parse times early
     df["ts_utc"] = pd.to_datetime(df["ts_utc"], utc=True, errors="coerce")
     df["commence_time_utc"] = pd.to_datetime(df["commence_time_utc"], utc=True, errors="coerce")
+    df["line"] = pd.to_numeric(df["line"], errors="coerce")
     df = df.dropna(subset=["ts_utc", "commence_time_utc", "line"]).copy()
 
     # Keep only future games
@@ -84,8 +110,6 @@ def detect_triggers(con: sqlite3.Connection, sport: str, market: str, config: Di
         df.loc[out == home, "outcome"] = "HOME"
         df.loc[out == away, "outcome"] = "AWAY"
 
-    df["line"] = pd.to_numeric(df["line"], errors="coerce")
-    df = df.dropna(subset=["line"]).copy()
     df = df.sort_values(["event_id", "outcome", "bookmaker_key", "ts_utc"])
 
     books = config["books"]
@@ -175,7 +199,7 @@ def detect_triggers(con: sqlite3.Connection, sport: str, market: str, config: Di
         if confirmations < min_conf:
             continue
 
-        # Plateau check (allow small plateau by default)
+        # Plateau check (avoid firing while still actively moving)
         s_origin = series.get(origin_book)
         last_ts = s_origin.iloc[-1]["ts_utc"]
         minutes_since = (pd.Timestamp.utcnow() - last_ts).total_seconds() / 60.0
@@ -221,18 +245,17 @@ def detect_triggers(con: sqlite3.Connection, sport: str, market: str, config: Di
         if best_line is None:
             continue
 
-        # scoring (simple + stable)
         steam_strength = abs(origin_move) / move_thr if move_thr > 0 else 0.0
         minutes_to_game = (g["commence_time_utc"].iloc[0] - pd.Timestamp.utcnow()).total_seconds() / 60.0
 
         score = (w_move * steam_strength) + (w_conf * confirmations) + (w_best * followers)
-
         notes = f"conf={confirmations} followers={followers}"
+
         triggers.append(
             Trigger(
                 sport=sport,
                 event_id=str(event_id),
-                commence_time_utc=str(g["commence_time_utc"].iloc[0].to_pydatetime().replace(tzinfo=timezone.utc).isoformat()),
+                commence_time_utc=str(g["commence_time_utc"].iloc[0].to_pydatetime().astimezone(timezone.utc).isoformat()),
                 home_team=str(g["home_team"].iloc[0]),
                 away_team=str(g["away_team"].iloc[0]),
                 market=market,
@@ -253,3 +276,21 @@ def detect_triggers(con: sqlite3.Connection, sport: str, market: str, config: Di
         )
 
     return triggers
+
+if market == "totals":
+    # Require at least one confirmation (totals are noisy)
+    if int(confirmations or 0) < 1:
+        continue
+
+    outcome_fixed = _totals_outcome_from_move(
+        origin_line=origin_line,
+        current_line=current_best_line,
+        origin_move=origin_move,
+    )
+    if outcome_fixed is None:
+        continue
+
+    outcome = outcome_fixed
+
+#
+

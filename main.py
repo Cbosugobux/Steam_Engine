@@ -54,13 +54,41 @@ def cmd_pull(args, cfg):
     markets = [m.strip() for m in args.markets.split(",") if m.strip()]
     bookmakers = ",".join(sorted(allowed_books))
 
-    payload = client.odds(
-        sport=args.sport,
-        regions=args.regions,
-        markets=",".join(markets),
-        odds_format="american",
-        bookmakers=bookmakers,
-    )
+    # Player props require events -> event_odds per event_id
+    is_props = any(m.startswith("player_") for m in markets)
+
+    payload = []
+    if is_props:
+        events = client.events(args.sport)
+        for ev in events:
+            eid = ev.get("id")
+            if not eid:
+                continue
+            try:
+                p_ev = client.event_odds(
+                    sport=args.sport,
+                    event_id=eid,
+                    regions=args.regions,
+                    markets=",".join(markets),
+                    odds_format="american",
+                    bookmakers=bookmakers,
+                )
+                # The event endpoint may return dict or list depending on market/availability
+                if isinstance(p_ev, list):
+                    payload.extend(p_ev)
+                elif isinstance(p_ev, dict):
+                    payload.append(p_ev)
+            except Exception:
+                # skip events that don't have prop markets or are unavailable
+                continue
+    else:
+        payload = client.odds(
+            sport=args.sport,
+            regions=args.regions,
+            markets=",".join(markets),
+            odds_format="american",
+            bookmakers=bookmakers,
+        )
 
     rows = parse_odds_payload(
         payload,
@@ -89,7 +117,7 @@ def cmd_detect(args, cfg):
         return
 
     df = pd.DataFrame([t.__dict__ for t in all_tr]).sort_values(["commence_time_utc", "market", "outcome"])
-    out = Path(args.out_csv)
+    out = Path(getattr(args, "out_csv", None) or "data/triggers.csv")
     out.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(out, index=False)
 
@@ -100,13 +128,19 @@ def cmd_detect(args, cfg):
 def cmd_run(args, cfg):
     cmd_pull(args, cfg)
 
+    # In run-mode, we do a pull immediately before detect.
+    # That means the newest snapshot timestamps are "now" and can fail the plateau check.
+    # Use plateau_minutes_run (default 0) to avoid suppressing fresh signals.
+    cfg_run = dict(cfg)
+    cfg_run['plateau_minutes'] = int(cfg.get('plateau_minutes_run', cfg.get('plateau_minutes', 3)))
+
     con = connect(Path(args.db))
     init_db(con)
 
     markets = [m.strip() for m in args.markets.split(",") if m.strip()]
     triggers = []
     for mkt in markets:
-        triggers.extend(detect_triggers(con, sport=args.sport, market=mkt, config=cfg))
+        triggers.extend(detect_triggers(con, sport=args.sport, market=mkt, config=cfg_run))
 
     if not triggers:
         print("No triggers.")
@@ -144,7 +178,7 @@ def cmd_run(args, cfg):
         print("No triggers after filters.")
         return
 
-    # kill duality: ONE per (event_id, market)
+    # ONE per (event_id, market)
     best = {}
     for t in filt:
         k = (str(t.event_id), str(t.market))
@@ -297,7 +331,7 @@ def cmd_clv(args, cfg):
     """
     df = pd.read_sql_query(q, con)
 
-    out = Path(args.out_csv)
+    out = Path(getattr(args, "out_csv", None) or "data/clv.csv")
     out.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(out, index=False)
 
@@ -307,7 +341,6 @@ def cmd_clv(args, cfg):
 
 
 def main():
-    # IMPORTANT: override=True fixes your "still reading PASTE_YOUR..." problem
     load_dotenv(dotenv_path=BASE_DIR / ".env", override=True)
     cfg = load_config()
 
@@ -316,18 +349,24 @@ def main():
     p.add_argument("--sport", required=True)
     p.add_argument("--markets", default="spreads,totals")
     p.add_argument("--regions", default="us,us2,eu")
-    p.add_argument("--out_csv", default="data/triggers.csv")
 
     sub = p.add_subparsers(dest="cmd", required=True)
+
     sub.add_parser("pull")
-    sub.add_parser("detect")
+    sub.add_parser("prop_pull", help="Alias for pull (used for player props via player_* markets)")
+
+    p_detect = sub.add_parser("detect")
+    p_detect.add_argument("--out_csv", default="data/triggers.csv")
+
     sub.add_parser("run")
     sub.add_parser("close")
-    sub.add_parser("clv")
+
+    p_clv = sub.add_parser("clv")
+    p_clv.add_argument("--out_csv", default="data/clv.csv")
 
     args = p.parse_args()
 
-    if args.cmd == "pull":
+    if args.cmd == "pull" or args.cmd == "prop_pull":
         cmd_pull(args, cfg)
     elif args.cmd == "detect":
         cmd_detect(args, cfg)
